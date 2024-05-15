@@ -1,36 +1,17 @@
 @charset "UTF-8";
 
-/* Body */
-
 .page {
   font-variation-settings: var(--text-font-wght);
   min-inline-size: 320px;
   min-block-size: 100dvb;
   color: var(--text-color);
-  background: repeating-linear-gradient(
-      90deg,
-      var(--background-color),
-      var(--background-color) 2px,
-      transparent 2px,
-      transparent 4px
-    ),
-    repeating-linear-gradient(
-      180deg,
-      var(--bg-color-beginning),
-      var(--bg-color-last) 2px,
-      transparent 2px,
-      transparent 4px
-    ),
-    repeating-linear-gradient(
-      180deg,
-      var(--bg-color-beginning) 0.01%,
-      var(--bg-color-last)
-    );
+  background: var(--background-color);
+	background-image: var(--gradient-left-to-right), var(--gradient-top-to-bottom),
+    var(--gradient-background);
+		background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
 }
-
-/* Photo filters */
 
 .grayscale {
   filter: grayscale(50%);
@@ -59,8 +40,6 @@
 .multi-filter {
   filter: saturate(250%) hue-rotate(90deg) grayscale(20%) invert(25%) blur(2px);
 }
-
-/* Image labels */
 
 .image-label {
   font-family: var(--fantasy-font-family);
@@ -91,8 +70,6 @@
     top: 24px;
   }
 }
-
-/* SVG */
 
 .floppy-image {
   width: 21px;
@@ -167,7 +144,6 @@
   fill: var(--heart-color);
 }
 
-/* Buttons */
 
 .button {
   font-family: var(--fantasy-font-family);
@@ -234,15 +210,14 @@
   background: var(--page-background);
 }
 
-/* Main */
 
 .cards {
-  display: flex;
-  flex-direction: column;
-  gap: 50px;
+  display: grid;
+    justify-items: center;
+    gap: 57px;
+    padding-block-end: 105px;
 }
 
-/* Header */
 
 .header {
   font-family: var(--fantasy-font-family);
@@ -341,15 +316,12 @@
   transform: translateX(0);
 }
 
-/* Section */
 
 .section {
   display: inherit;
   flex-direction: inherit;
   gap: inherit;
 }
-
-/* Cards */
 
 .card {
   border: 2px solid var(--stroke-color);
@@ -383,6 +355,7 @@
   display: flex;
   flex-direction: column;
   gap: 26px;
+	line-height: calc(21 / 18);
 }
 
 .card__icon-button {
@@ -417,12 +390,11 @@
 @media (width <= 375px) {
   .card:nth-child(7) .card__text {
     max-width: 317px;
+		line-height: calc(21 / 18);
   }
 }
 
-/* Modal */
-
-.dialog {
+.dialog[open] {
   font-family: var(--fantasy-font-family);
   font-size: 14px;
   padding: 30px 26px;
@@ -431,7 +403,7 @@
   border: 2px solid var(--stroke-color);
 }
 
-.dialog::backdrop {
+.dialog[open]::backdrop {
   background-color: rgba(0, 0, 0, 0.75);
 }
 

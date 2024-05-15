@@ -22,7 +22,7 @@
 
   <body class="page">
     <header class="header">
-      <a href="#" class="header__link">&lt;/html&gt;</a>
+      <a class="header__link">&lt;/html&gt;</a>
       <h1 class="header__title">Закрывающий тег</h1>
       <nav class="theme-menu header__theme-menu">
         <ul class="theme-menu__list">
@@ -52,7 +52,6 @@
 
     <main class="cards">
       <section class="section">
-				<h2 class="visually-hidden">Контент с карточками, где в каждой карточке рассказывается о спринтах, которые уже прошли или проходим</h2>
         <article class="card">
           <h2 class="card__title">
             Фритрек и нулевой спринт: Подготовка к работе
@@ -61,7 +60,7 @@
             <span class="image-label">&lt;/HTML&gt;</span>
             <img
               src="./images/car.webp"
-              alt="Фритрек и нулевой спринт: Подготовка к работе"
+              alt="Картинка с фудтреком без фильтра"
               class="card__image"
             />
           </div>
@@ -117,14 +116,14 @@
             </div>
           </div>
         </article>
-				<h2 class="visually-hidden">карточка с первым спринтом</h2>
+
         <article class="card">
           <h2 class="card__title">1 спринт: Я — чистый лист</h2>
           <div class="card__image-container">
             <span class="image-label">&lt;/HTML&gt;</span>
             <img
               src="./images/car.webp"
-              alt="1 спринт: Я — чистый лист"
+              alt="Картинка на которой изображён фудтрек, на ней наложен фильтер"
               class="card__image grayscale"
               loading="lazy"
             />
@@ -183,14 +182,13 @@
             </div>
           </div>
         </article>
-				<h2 class="visually-hidden">карточка где рассказывается о сложностях первого спринта</h2>
         <article class="card">
           <h2 class="card__title">1 спринт: А если не получится?</h2>
           <div class="card__image-container">
             <span class="image-label">&lt;CSS&gt;</span>
             <img
               src="./images/car.webp"
-              alt="1 спринт: А если не получится?"
+              alt="Картинка на которой изображён фудтрек, на ней наложен фильтер"
               class="card__image saturate"
               loading="lazy"
             />
@@ -243,14 +241,13 @@
             </div>
           </div>
         </article>
-				<h2 class="visually-hidden">карточка с рассказом о втором спринте</h2>
         <article class="card">
           <h2 class="card__title">2 спринт: Погоня за идеалом</h2>
           <div class="card__image-container">
             <span class="image-label">&lt;desigions&gt;</span>
             <img
               src="./images/car.webp"
-              alt="2 спринт: Погоня за идеалом"
+              alt="Картинка на которой изображён фудтрек, на ней наложен фильтер"
               class="card__image hue-rotate"
               loading="lazy"
             />
@@ -309,14 +306,13 @@
             </div>
           </div>
         </article>
-				<h2 class="visually-hidden">карточка с рассказом о сложностях и удачах второго спринта</h2>
         <article class="card">
           <h2 class="card__title">2 спринт: О тех, кто рядом</h2>
           <div class="card__image-container">
             <span class="image-label">care</span>
             <img
               src="./images/car.webp"
-              alt="2 спринт: О тех, кто рядом"
+              alt="Картинка на которой изображён фудтрек, на ней наложен фильтер"
               class="card__image invert"
               loading="lazy"
             />
@@ -372,14 +368,13 @@
             </div>
           </div>
         </article>
-				<h2 class="visually-hidden">карточка с рассказом о третьем спринте</h2>
         <article class="card">
           <h2 class="card__title">3 спринт: Обходные стратегии</h2>
           <div class="card__image-container">
             <span class="image-label">&lt;support&gt;</span>
             <img
               src="./images/car.webp"
-              alt="3 спринт: Обходные стратегии"
+              alt="Картинка на которой изображён фудтрек, на ней наложен фильтер"
               class="card__image sepia"
               loading="lazy"
             />
@@ -436,14 +431,13 @@
             </div>
           </div>
         </article>
-				<h2 class="visually-hidden">карточка с рассказом о сложностях третьего спринта</h2>
         <article class="card">
           <h2 class="card__title">3 спринт: Когда опускаются руки</h2>
           <div class="card__image-container">
             <span class="image-label">&lt;lifes-style: none;&gt;</span>
             <img
               src="./images/car.webp"
-              alt="3 спринт: Когда опускаются руки"
+              alt="Картинка на которой изображён фудтрек, на ней наложен фильтер"
               class="card__image blur"
               loading="lazy"
             />
@@ -502,14 +496,13 @@
             </div>
           </div>
         </article>
-				<h2 class="visually-hidden">карточка с рассказом о спринте на котором сейчас нахожусь, проект которого сейча делаю</h2>
         <article class="card">
           <h2 class="card__title">«Сейчас я здесь»</h2>
           <div class="card__image-container">
             <span class="image-label">&lt;experience&gt;</span>
             <img
               src="./images/car.webp"
-              alt="«Сейчас я здесь»"
+              alt="Картинка на которой изображён фудтрек, на ней наложен фильтер"
               class="card__image multi-filter"
               loading="lazy"
             />
@@ -601,15 +594,10 @@
           </svg>
           <p class="dialog__text">Вставьте дискету, чтобы продолжить</p>
         </div>
-        <form>
-          <button
-            class="button ok-button"
-            onclick="window['dialog-id'].close()"
-            type="submit"
-            aria-controls="dialog-id"
-          >
-            <span class="button__text">Ok</span>
-          </button>
+          <form method="dialog">
+						<button class="button ok-button" type="submit" aria-controls="dialog-id">
+							<span class="button__text">Ok</span>
+						</button>
         </form>
       </div>
     </dialog>

@@ -1,11 +1,12 @@
 https://github.com/lev1996frontend/zakrivayuschiy-teg-f.git
+
 # Яндекс Практикум, проектная работа "Закрывающий тег"
 
 ## Оглавление
 
-	- [Скриншоты](#скриншоты)
-	- [Ссылки](#ссылки)
-	- [Автор](#автор)
+  - [Скриншоты](#screenshots)
+  - [Ссылки](#links)
+  - [Автор](#author)
 
 ### Скриншоты
 
@@ -13,7 +14,6 @@ https://github.com/lev1996frontend/zakrivayuschiy-teg-f.git
 ![](./screenshots/desktop-dark.png)
 ![](./screenshots/mobile-dark.png)
 ![](./screenshots/mobile.png)
-
 
 ### Ссылки
 

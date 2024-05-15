@@ -12,7 +12,34 @@
   --mix-blend-color: var(--page-background);
   --stroke-color: var(--text-color);
   --label-stroke-color: var(--page-background);
+
+  --gradient-line-1: rgb(211 211 211);
+  --gradient-line-2: rgb(211 211 211 / 0%);
+  --gradient-smeared-1: #e7e7e7;
+  --gradient-smeared-2: #1a1a1a;
+  --gradient-left-to-right: repeating-linear-gradient(
+    to right,
+    var(--gradient-line-2) 0,
+    var(--gradient-line-1) 1px,
+    var(--gradient-line-1) 2px,
+    var(--gradient-line-2) 3px,
+    var(--gradient-line-2) 4px
+  );
+  --gradient-top-to-bottom: repeating-linear-gradient(
+    to bottom,
+    var(--gradient-line-2) 0,
+    var(--gradient-line-1) 1px,
+    var(--gradient-line-1) 2px,
+    var(--gradient-line-2) 3px,
+    var(--gradient-line-2) 4px
+  );
+  --gradient-background: linear-gradient(
+    to bottom,
+    var(--gradient-smeared-1) 0.01%,
+    var(--gradient-smeared-2)
+  );
 }
+
 
 :root.theme-dark {
   --page-background: #000;
@@ -26,4 +53,70 @@
   --mix-blend-color: var(--text-color);
   --stroke-color: var(--text-color);
   --label-stroke-color: var(--page-background);
+	--gradient-line-1: rgb(0 0 0);
+	--gradient-line-2: rgb(0 0 0 / 0%);
+	--gradient-smeared-1: #007f0c;
+	--gradient-smeared-2: #004306;
+	--gradient-left-to-right: repeating-linear-gradient(
+		to right,
+		var(--gradient-line-2) 0,
+		var(--gradient-line-1) 1px,
+		var(--gradient-line-1) 2px,
+		var(--gradient-line-2) 3px,
+		var(--gradient-line-2) 4px
+	);
+	--gradient-top-to-bottom: repeating-linear-gradient(
+		to bottom,
+		var(--gradient-line-2) 0,
+		var(--gradient-line-1) 1px,
+		var(--gradient-line-1) 2px,
+		var(--gradient-line-2) 3px,
+		var(--gradient-line-2) 4px
+	);
+	--gradient-background: linear-gradient(
+		to bottom,
+		var(--gradient-smeared-1),
+		var(--gradient-smeared-2)
+	);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+		--page-background: #000;
+		--background-color: var(--page-background);
+		--bg-color-beginning: #007f0c;
+		--bg-color-last: #004306;
+		--title-font-wght: "wght" 785;
+		--text-font-wght: "wght" 465;
+		--header-bg: var(--page-background);
+		--text-color: #00cc14;
+		--mix-blend-color: var(--text-color);
+		--stroke-color: var(--text-color);
+		--label-stroke-color: var(--page-background);
+		--gradient-line-1: rgb(0 0 0);
+		--gradient-line-2: rgb(0 0 0 / 0%);
+		--gradient-smeared-1: #007f0c;
+		--gradient-smeared-2: #004306;
+		--gradient-left-to-right: repeating-linear-gradient(
+			to right,
+			var(--gradient-line-2) 0,
+			var(--gradient-line-1) 1px,
+			var(--gradient-line-1) 2px,
+			var(--gradient-line-2) 3px,
+			var(--gradient-line-2) 4px
+		);
+		--gradient-top-to-bottom: repeating-linear-gradient(
+			to bottom,
+			var(--gradient-line-2) 0,
+			var(--gradient-line-1) 1px,
+			var(--gradient-line-1) 2px,
+			var(--gradient-line-2) 3px,
+			var(--gradient-line-2) 4px
+		);
+		--gradient-background: linear-gradient(
+			to bottom,
+			var(--gradient-smeared-1),
+			var(--gradient-smeared-2)
+		);
+  }
 }

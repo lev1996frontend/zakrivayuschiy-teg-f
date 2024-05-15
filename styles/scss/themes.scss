@@ -14,6 +14,9 @@
       --mix-blend-color: var(--page-background);
       --stroke-color: var(--text-color);
       --label-stroke-color: var(--page-background);
+			$gradient-left-to-right: var(--gradient-left-to-right);
+$gradient-top-to-bottom: var(--gradient-top-to-bottom);
+$gradient-background: var(--gradient-background);
     }
 
     &-dark {
@@ -28,6 +31,10 @@
       --mix-blend-color: var(--text-color);
       --stroke-color: var(--text-color);
       --label-stroke-color: var(--page-background);
+			$gradient-left-to-right: var(--gradient-left-to-right);
+$gradient-top-to-bottom: var(--gradient-top-to-bottom);
+$gradient-background: var(--gradient-background);
+
     }
   }
 }

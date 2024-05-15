@@ -22,18 +22,3 @@
   }
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --page-background: #000;
-    --background-color: var(--page-background);
-    --bg-color-beginning: #007f0c;
-    --bg-color-last: #004306;
-    --title-font-wght: "wght" 785;
-    --text-font-wght: "wght" 465;
-    --header-bg: var(--page-background);
-    --text-color: #00cc14;
-    --mix-blend-color: var(--text-color);
-    --stroke-color: var(--text-color);
-    --label-stroke-color: var(--page-background);
-  }
-}
