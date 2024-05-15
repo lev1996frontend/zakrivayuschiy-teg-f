@@ -18,7 +18,7 @@ https://github.com/lev1996frontend/zakrivayuschiy-teg-f.git
 ### Ссылки
 
 - URL решения: [Github](https://github.com/lev1996frontend/zakrivayuschiy-teg-f.git)
-- URL лайв сервера: [Github](https://lev1996frontend.github.io/slozhno-sosredotochitsya/)
+- URL лайв сервера: [Github](https://lev1996frontend.github.io/zakrivayuschiy-teg-f/)
 
 ## Автор
 
