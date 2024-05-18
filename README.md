@@ -4,22 +4,22 @@ https://github.com/lev1996frontend/zakrivayuschiy-teg-f.git
 
 ## Оглавление
 
-  - [Скриншоты](#screenshots)
-  - [Ссылки](#links)
-  - [Автор](#author)
+  - [Скриншоты](#Скриншоты)
+  - [Ссылки](#Ссылки)
+  - [Автор](#Автор)
 
-### Скриншоты
+### Скриншоты(#screenshots)
 
 ![](./screenshots/desktop.png)
 ![](./screenshots/desktop-dark.png)
 ![](./screenshots/mobile-dark.png)
 ![](./screenshots/mobile.png)
 
-### Ссылки
+### Ссылки(#links)
 
 - URL решения: [Github](https://github.com/lev1996frontend/zakrivayuschiy-teg-f.git)
 - URL лайв сервера: [Github](https://lev1996frontend.github.io/zakrivayuschiy-teg-f/)
 
-## Автор
+## Автор(#author)
 
 - Github - [lev1996frontend](https://github.com/lev1996frontend)
