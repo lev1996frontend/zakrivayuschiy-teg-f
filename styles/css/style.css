@@ -214,7 +214,7 @@
 .cards {
   display: grid;
     justify-items: center;
-    gap: 57px;
+    gap: 50px;
     padding-block-end: 105px;
 }
 
@@ -326,6 +326,10 @@
 .card {
   border: 2px solid var(--stroke-color);
   background: var(--header-bg);
+}
+
+.cards:last-child {
+	gap: 80px;
 }
 
 .card__title {
